@@ -1,5 +1,43 @@
-img {
-    width:100%;
+@media (min-width: 1200px) {
+    .navbar {
+        background: #c4dfe2;     
+        
+    }
+    
+}
+
+/* Anything Smaller than Large  */
+@media (max-width: 1199px) {
+    .navbar {
+        background: #ffc7b5; 
+    }
+
+
+}
+
+
+.fancybox img {
+    height: 550px;
+    width:300px;
+    -webkit-filter: blur(1px) contrast(1.9) opacity(0.4) sepia(1);
+   
+
+}
+.fancybox img:hover,
+.permahover{
+    -webkit-filter: blur(0px) contrast(1) opacity(1) sepia(0);
+    transition: .5s;
+
+}
+
+ img{
+margin: auto;
+ 
+}
+
+
+
+
 }
 
 body {
@@ -10,8 +48,12 @@ body {
 footer {
     position:relative;
     bottom:0;
-    border-top: 2px solid black;
-    width: 80%;
+    border-top: 1px solid #a2ced3;
+    width: 50%;
+    opacity: .75;
+    color: #a2ced3;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -22,10 +64,7 @@ h1{
     font-family: dryBrush;
 }
 
-#videos{
-	margin-left: 5px;
-    bottom: 10%;
-}
+
 
 .form-wrapper {
   
@@ -39,20 +78,23 @@ form {
 }
 
 .form-item {
-    margin-bottom: 5px;
+    
     width: 90%;
+
+    margin: 5px auto 10px auto;
 }
 
 .form-item input {
     border: 1px solid #ccc;
     border-radius: 2px;
     color: #000;
-    font-family: dryBrush;
+    font-family: helvetica;
     font-size: 12px;
     height: 50px;
     padding: 0 16px;
     transition: background 0.3s ease-in-out;
     width: 50%;
+
 }
 
 .form-item input:focus {
@@ -64,37 +106,22 @@ form {
 background: #1b2228;
 
 color: white;
-
+position: relative;
 height: 30px;
-
+ margin: 0 auto 50px auto;
 width: 80px;
-
-font-family: 'Poiret One', cursive;
+display: block;
+font-family: helvetica;
 
 }
 textarea{
-    font-family: dryBrush;
+    font-family: helvetica;
     padding: 10px;
-    margin: auto;
+    margin: auto auto 5px auto;
+    position: relative;
+    display: block;
 
 }
 
-#portfolio img{
-margin: auto;
 
-    opacity: .5;
-}
 
-#portfolio img:hover{
-opacity: 1;
-}
-
-#portfolio #bg-orange{
-background-color: peachpuff;
-    padding:20px;
-}
-
-#portfolio #bg-yellow{
-background-color:#e0e083;
-    padding:20px;
-}
